@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Hit Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <img id="moving-photo" src="c1.png" alt="Target">
+        <span id="shooter-point"></span> <!-- Shooter Point (Neon Smoke) -->
+        <img id="shoe" src="sndl.png" alt="Shoe" onclick="throwShoe()">
+        <img id="blast" src="damage.png" alt="Blast Effect">
+        
+        <div id="scoreboard">
+            <p>Hits: <span id="hits">0</span></p>
+            <p>Misses: <span id="misses">0</span></p>
+            <p>Attempts: <span id="attempts">0</span></p>
+            <div id="visitor-counter">
+                <p id="visitor-text">Total Visitors:</p>
+                <a href="https://www.hitwebcounter.com" target="_blank">
+                    <img src="https://hitwebcounter.com/counter/counter.php?page=19046229&style=0007&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>                                    
+                    </div>
+        </div>
+        <p id="message"></p>
+        <span id="mute">Mute</span>
+        <a href="https://github.com/Gtajisan" id="contact-developer">Contact Developer</a>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="throw-sound" src="throw.mp3"></audio>
+    <audio id="hit-sound" src="hit.mp3"></audio>
+    <audio id="hit-sound" src="song.mp3"></audio>
+    <audio id="miss-sound" src="miss.mp3"></audio>
+    <audio id="bgm" src="bgm.mp3"></audio>
+    <audio id="mp3" src="song.mp3"></audio>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

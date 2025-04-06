@@ -1,0 +1,171 @@
+/* Universal reset for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Game container full screen adjustment */
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    overflow: hidden;
+    border: 2px solid white;
+    background-image: url('https://raw.githubusercontent.com/llldayanlll/bongoboltu/refs/heads/main/bgis.JPG');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Target movement */
+#moving-photo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+/* Shooter Point for Neon Glow */
+#shooter-point {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 10px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 165, 0, 0.7), rgba(255, 0, 0, 0.5));
+    box-shadow: 0 0 30px rgba(255, 165, 0, 0.8), 0 0 60px rgba(255, 0, 0, 0.7);
+    animation: fireGlow 1.5s infinite alternate ease-in-out;
+}
+
+/* Shoe and target adjustments for smaller screens */
+#shoe {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    cursor: pointer;
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+#shoe:active {
+    transform: translateX(-50%) scale(1.1);
+}
+
+/* Media Queries for responsive adjustments */
+@media screen and (max-width: 768px) {
+    #shooter-point {
+        left: 50%;
+    }
+    #shoe {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #shooter-point {
+        left: 50%;
+    }
+    #shoe {
+        width: 80px;
+    }
+}
+
+/* Ensure blast effect and other elements are responsive */
+#blast {
+    position: absolute;
+    display: none;
+    width: 120px;
+}
+
+#scoreboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0 5px 5px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#visitor-text{
+    margin-bottom: 0;
+    font-size: 12px;
+}
+#visitor-counter img {
+    height: 8px;
+    width: 24px;
+}
+#message {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    width: auto;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    color: white;
+}
+#message button {    
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 8px 15px;    
+    background: yellow;    
+    border: none;    
+    cursor: pointer;    
+    font-size: 16px;
+    border-radius: 10px;
+}
+    
+#message button:hover {    
+    background: orange;    
+}
+
+#mute {
+    position: absolute;
+    top: 10px;
+    right: 140px;
+    color: yellow;
+    margin-right: 15px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    background: rgba(255, 255, 0, 0.2);
+    cursor: pointer;
+}
+#mute:hover {    
+    background: rgba(255, 255, 0, 0.5);    
+}    
+
+#contact-developer {
+    position: absolute;
+    margin-left: 15px;
+    top: 10px;
+    right: 10px;
+    color: yellow;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    background: rgba(255, 255, 0, 0.2);
+}
+/* Hover Effect for Contact Dev */    
+#contact-developer:hover {    
+    background: rgba(255, 255, 0, 0.5);    
+}    
