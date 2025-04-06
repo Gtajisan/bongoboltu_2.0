@@ -106,7 +106,7 @@ function throwShoe() {
             clearInterval(shoeMove);  
             hits++;  
             document.getElementById("hits").innerText = hits;  
-            showMessage("💥 BOOM! Perfect Hit!", 1000);  
+            showMessage("💥 BOMOCLAT Perfect 🎯!", 1000);  
   
             blast.style.display = "block";  
             blast.style.left = `${targetCenterX - blast.clientWidth / 2}px`;  
@@ -126,7 +126,7 @@ function throwShoe() {
             clearInterval(shoeMove);  
             misses++;  
             document.getElementById("misses").innerText = misses;  
-            showMessage("😢 Missed! Try Again.", 1000);  
+            showMessage("bruh 😢 Missed! Try Again.", 1000);  
   
             missSound.play();  
   
@@ -179,7 +179,7 @@ function gameWin() {
         border-radius: 10px;
     ">
         <img src="dead.png" alt="Winner" style="width: 200px; height: auto;">
-        <h2 style="font-size: 28px; margin-top: -80px ">🎉 Congratulations, You Won! Gen-Z hits: ${hits}</h2>
+        <h2 style="font-size: 28px; margin-top: -80px ">🎉 congress, You Won! Gen-z👥 hits: ${hits}</h2>
         <button onclick="restartGame()">Start Again</button>
     </div>`;
     message.style.display = "block";  
